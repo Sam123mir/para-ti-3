@@ -1,0 +1,214 @@
+/* Estilos generales para dispositivos móviles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe6f2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #d63384;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.princess {
+    display: none;
+    padding: 20px;
+    background: #fff0f5;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.princess img {
+    width: 90%;
+    max-width: 280px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.princess img:hover {
+    transform: scale(1.05);
+}
+
+.princess p {
+    font-size: 18px;
+    color: #444;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.special {
+    display: none;
+    margin-top: 30px;
+    padding: 25px;
+    background: #ffb6c1;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.special img {
+    width: 70%;
+    max-width: 160px;
+    height: 160px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+
+.special p {
+    font-size: 18px;
+    color: #444;
+    font-weight: 600;
+    line-height: 1.6;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #d63384;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #b82e70;
+    transform: scale(1.05);
+}
+
+.rating {
+    display: none;
+    margin-top: 20px;
+}
+
+.heart {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s ease, transform 0.3s;
+}
+
+.heart.selected {
+    color: #ff4d6d;
+    transform: scale(1.1);
+}
+
+/* Panel de control de música */
+.music-control {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ffccff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    transition: transform 0.3s ease;
+}
+
+.music-control:hover {
+    transform: scale(1.05);
+}
+
+.music-control button {
+    padding: 12px 18px;
+    margin: 8px;
+    background-color: #d63384;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.music-control button:hover {
+    background-color: #b82e70;
+    transform: scale(1.05);
+}
+
+/* Consultas de medios para asegurar que se vea bien solo en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    /* La mayor parte del estilo ya está optimizada, solo se ajustan tamaños más pequeños */
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .container {
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    .princess img, .special img {
+        width: 80%;
+    }
+
+    .music-control {
+        top: 15px;
+        left: 15px;
+        padding: 15px;
+    }
+}
+
+/* Para dispositivos con pantallas más pequeñas (móviles de tamaño muy pequeño) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .princess img, .special img {
+        width: 70%;
+    }
+
+    .music-control {
+        padding: 12px;
+        top: 10px;
+        left: 10px;
+    }
+}

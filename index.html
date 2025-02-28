@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalito para Ti <3 </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Agregar música de fondo que inicia al cargar la página -->
+    <audio id="audio" autoplay loop>
+        <source src="musica.mp3" type="audio/mp3">
+        Tu navegador no soporta el formato de audio.
+    </audio>
+
+    <div class="container">
+        <h1>Galería de Princesas Disney</h1>
+        
+        <div class="princess" id="princess1">
+            <img src="imagenes/bella.jpg" alt="Bella">
+            <p>💖 Bella - Inteligente y valiente, amante de los libros.</p>
+        </div>
+        <div class="princess" id="princess2">
+            <img src="imagenes/cenicienta.jpg" alt="Cenicienta">
+            <p>👠 Cenicienta - Amable y soñadora, nunca pierde la esperanza.</p>
+        </div>
+        <div class="princess" id="princess3">
+            <img src="imagenes/ariel.jpg" alt="Ariel">
+            <p>🌊 Ariel - Aventurera y curiosa, ama explorar nuevos mundos.</p>
+        </div>
+        <div class="princess" id="princess4">
+            <img src="imagenes/jazmin.jpg" alt="Jazmín">
+            <p>🐅 Jazmín - Independiente y fuerte, lucha por su libertad.</p>
+        </div>
+        <div class="princess" id="princess5">
+            <img src="imagenes/mulan.jpg" alt="Mulán">
+            <p>⚔️ Mulán - Valiente y decidida, rompe barreras y desafía tradiciones.</p>
+        </div>
+        <div class="princess" id="princess6">
+            <img src="imagenes/rapunzel.jpg" alt="Rapunzel">
+            <p>✨ Rapunzel - Soñadora y creativa, encuentra su propio camino.</p>
+        </div>
+        <div class="princess" id="princess7">
+            <img src="imagenes/tiana.jpg" alt="Tiana">
+            <p>🐸 Tiana - Trabajadora y determinada, nunca deja de perseguir sus sueños.</p>
+        </div>
+        <div class="special" id="special">
+            <h2>✨ Y la más importante en mi vida, Antonella 💖</h2>
+            <img src="imagenes/antonella.jpg" alt="Antonella">
+            <p>Una chica bonita, amable, sensible y cariñosa. Eres mi princesa favorita y la más especial de todas. 💕</p>
+        </div>
+        
+        <button class="btn" onclick="nextPrincess()">Siguiente ➡️</button>
+        
+        <div class="rating" id="rating">
+            <h2>💖 ¿Te gustó?</h2>
+            <span class="heart" onclick="rate(1)">❤️</span>
+            <span class="heart" onclick="rate(2)">❤️</span>
+            <span class="heart" onclick="rate(3)">❤️</span>
+            <span class="heart" onclick="rate(4)">❤️</span>
+            <span class="heart" onclick="rate(5)">❤️</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
